@@ -1,3 +1,6 @@
 these is the template structure
 + nav bar items
 home ,shope ,blog, pages , contact  us
+
+
+please use hote load server to open the application
