@@ -1,0 +1,3 @@
+these is the template structure
++ nav bar items
+home ,shope ,blog, pages , contact  us

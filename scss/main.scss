@@ -1,0 +1,126 @@
+$mainColor: #ffffff;
+$textColor: #2a2a2a;
+$sectextColor: #e4e4e4;
+$helperColor: #b0262b;
+$elemBack:#e7e5e536;
+
+body {
+    background-color: $mainColor;
+    color: $textColor;
+    font-family: 'Poppins', sans-serif;
+
+    h1,h2,h3,h4{
+        text-transform: uppercase;
+    }
+    
+    .navbar-nav{
+        .nav-item{
+            a{
+                color: $textColor;
+            }
+            .i-settings{
+                background: url(/img/settings.svg);
+                background-position: center;
+                background-size: contain;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+            .i-search{
+                background: url(/img/search.svg);
+                background-position: center;
+                background-size: contain;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+            .i-market{
+                background: url(/img/market.svg);
+                background-position: center;
+                background-size: contain;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+            .item-count{
+                background-color: $helperColor;
+                border-radius: 50%;
+                color: $mainColor;
+                font-size: 0.8em;
+            }
+        }
+    }
+    .banner{
+        background-color: $elemBack;
+        .btn-light{
+            border: 2px $textColor solid;
+            text-transform: capitalize;
+            background:transparent;
+        }
+        .footer-text{
+            color: $textColor;
+        }
+        .subscribe-form{    
+            input[type='email']{
+                border-radius: 15px 0px 0px 15px;
+                overflow: hidden;
+            }
+            input[type='submit']{
+                border-radius: 0px 15px 15px 0px;
+                background-color:$textColor;
+                color: $mainColor;
+            }
+            input[type='email']:hover,
+            input[type='email']:active,
+            input[type='email']:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .chair-item{
+        background-color: $elemBack;
+        .details{
+            text-decoration: underline;
+            color: $helperColor;
+        }
+        img{
+            object-fit: fill;
+        }
+    }
+    .rating{
+        span{
+            // background: url(/img/star.svg);
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            background-position: center;
+            background-size: cover;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            // background: $helperColor;
+        }
+        .small{
+            width: 15px !important;
+            height: 15px !important;
+        }
+        
+    }
+    .pricing{
+       .old{
+           text-decoration: line-through;
+           color: $sectextColor;
+       } 
+    }
+    .discount{
+        width: 50px;
+        background: $helperColor;
+        color: $mainColor;
+    }
+    .offer-item{
+        background-color: $elemBack;
+    }
+    .copy{
+        color: $textColor;
+    }
+    
+}
